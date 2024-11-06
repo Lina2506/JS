@@ -13,3 +13,4 @@ let book3={
     pageCount: 980,
     genre: 'drama'
 }
+console.log(book1,book2,book3)
