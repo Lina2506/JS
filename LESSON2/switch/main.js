@@ -1,4 +1,4 @@
-switch ('Monday') {
+switch ('Thursday') {
     case 'Monday':
         console.log('monday');
         console.log('monday');
