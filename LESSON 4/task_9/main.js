@@ -5,8 +5,6 @@ function foobar(users) {
     }
 }
 
-
-
 foobar([
     {id: 1, name: 'vasya', age: 31},
     {id: 2, name: 'petya', age: 30},
