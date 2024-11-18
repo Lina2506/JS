@@ -22,3 +22,4 @@ let clients = [
     new Client(9, 'Sandra', 'sun', 'sun@com', '+3455766879', ['dvcx', 'dcx', 'dvjcl']),
     new Client(10, 'Makar', 'makarena', 'makarena@com', '+323356', ['ldkmclö', 'dcycx', 'djvc']),
 ];
+console.log(clients);
