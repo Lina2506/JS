@@ -32,7 +32,8 @@ const cinderellas= [
 const prince = new Prince('dckjn', 30, 33);
 
 for (const cinderella of cinderellas) {
-    if (cinderella.footSize===prinse.shoe){
+    if (cinderella.footSize===prince.shoe){
         princeChoice = cinderella;
     }
 }
+console.log(princeChoice);
