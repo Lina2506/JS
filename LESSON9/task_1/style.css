@@ -1,0 +1,13 @@
+.wrap{
+    text-decoration-color: cornflowerblue;
+}
+.collapse{
+    background-color: darkorange;
+}
+.alpha{
+    font-size: 16px;
+}
+.beta{
+    width: 100vw;
+    height: 100vh;
+}
