@@ -1,0 +1,9 @@
+.target{
+    div{
+        background: bisque;
+        margin-bottom: 10px;
+    }
+    img{
+        width: 400px;
+    }
+}
