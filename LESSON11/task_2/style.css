@@ -1,9 +1,23 @@
-.target{
-    div{
-        background: bisque;
-        margin-bottom: 10px;
-    }
-    img{
-        width: 400px;
-    }
+.recipe {
+    border: 1px solid #ccc;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    background-color: #fdfdfd;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.recipe h2 {
+    margin-top: 0;
+    color: #2a2a2a;
+}
+
+.recipe img {
+    max-width: 200px;
+    border-radius: 8px;
+    margin-top: 10px;
+}
+
+.recipe ul {
+    padding-left: 20px;
 }

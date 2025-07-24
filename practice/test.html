@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="root"></div>
+<script>
+
+  let nextId = 0;
+
+  const rootEl = document.getElementById('root');
+
+
+  const formEl = document.createElement('form');
+  rootEl.appendChild(formEl);
+
+  const descriptionEl = document.createElement('textarea');
+  formEl.appendChild(descriptionEl);
+
+  const buttonEl = document.createElement('button');
+  buttonEl.textContent = 'Добавить';
+  formEl.appendChild(buttonEl);
+
+  const listEl = document.createElement('ul');
+  rootEl.appendChild(listEl);
+
+  const errorEl = document.createElement('div');
+  formEl.insertBefore(errorEl, formEl.firstElementChild);
+
+  formEl.onsubmit = evt => {
+    evt.preventDefault();
+
+    errorEl.textContent = '';
+    let error = null;
+
+    const description = descriptionEl.value.trim();
+    if (description === '') {
+      error = 'Заполните поля Описание';
+      console.log(error);
+      return;
+    }
+
+    const comment = {
+      description
+    };
+
+    // Rows
+    const id = nextId++;
+    const rowEl = document.createElement('li');
+    rowEl.textContent = `${comment.description}`;
+    listEl.appendChild(rowEl);
+
+    comments.unshift({
+      description,
+      id
+    });
+    formEl.reset();
+  }
+
+  const comments = [];
+  console.log(comments);
+
+</script>
+</body>
+</html>
